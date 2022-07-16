@@ -21,7 +21,7 @@ form {
     min-width: 300px;
     margin: 0 auto;
 }
-
+/*Centre los label y los puse uno debajo del otro*/
 label {
     display: block;
     margin: 0.5rem 0;
