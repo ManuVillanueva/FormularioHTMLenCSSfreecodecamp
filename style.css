@@ -1,28 +1,78 @@
 /*css para el form de el curso de freecodecamp*/
 
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma;
-    font-size: 16px;
+    font-size: 15px;
 }
-
+/*Centro los elementos h1 y p*/
 h1, p {
     margin: 1em auto;
     text-align: center;
 }
-
+/*estilizo el elemento form, para que los formularios se alineen*/
 form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+    padding-bottom: 2em;
 }
+/*Saco los borde de los fieldset y le agrego una barra separadora*/
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
 /*Centre los label y los puse uno debajo del otro*/
 label {
     display: block;
     margin: 0.5rem 0;
+}
+/*Cambie el margen la altura y el ancho de los elementos*/
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+/*Cambie el color y el borde de input y textarea*/
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: white;
+}
+/*Modifico los botones radio y checkbox para ponerlos en orden con el estilo de la pagina*/
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+/*Acá modifico el elemento input con el type submit*/
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+/*Acá hago lo mismo que el anterior solo que seleccionando el type file*/
+input[type="file"] {
+    padding: 1px 2px;
+}
+/*Cambio el color de los anchor*/
+
+a {
+    color: #dfdfe2;
 }
